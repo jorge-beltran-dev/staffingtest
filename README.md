@@ -4,15 +4,21 @@ Staff Rota Shift test
 - Installation
 
 Run:
+
 composer update
+
 cp .env.example .env
+
 sudo chmod -R 777 storage/
+
 sudo chmod -R 777 bootstrap/cache
+
 php artisan key:generate
 
 Configure the database connection at .env
 
 Run:
+
 php artisan migrate
 
 Access the homepage of the application for viewing the rota
@@ -28,6 +34,7 @@ but this case is not present on the example data. Could be fixed with proper man
 - Tests
 
 Run:
+
 phpunit
 
 Running the tests requires php-sqlite installed
